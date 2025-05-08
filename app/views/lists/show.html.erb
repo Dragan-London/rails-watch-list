@@ -1,2 +1,6 @@
-<h1>This is show page</h1>
-<%= @list.name %>
+<h1>This is show page : <%= @list.name %></h1>
+<ul>
+  <% @bookmarks.each do |bookmark| %>
+  <li><%= bookmark.movie.title %></li>
+  <% end %>
+</ul>
